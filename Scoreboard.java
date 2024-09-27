@@ -23,10 +23,21 @@ public class Scoreboard
             {
                 activeTeam = teamTwo;
             }
+            else
+            {
+                activeTeam = teamOne;
+            }
         } 
         else 
         {
-            teamOneScore = teamOneScore + score;
+            if (activeTeam == teamOne)
+            {
+                teamOneScore = teamOneScore + score;
+            }
+            if (activeTeam == teamTwo)
+            {
+                teamTwoScore = teamTwoScore + score;
+            }
         }
     }
 }
