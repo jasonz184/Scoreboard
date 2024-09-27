@@ -17,7 +17,16 @@ public class Scoreboard
     }
     public void recordPlay(int score)
     {
-       
+        if (score == 0)
+        {
+            if (activeTeam == teamOne) 
+            {
+                activeTeam = teamTwo;
+            }
+        } 
+        else 
+        {
+            teamOneScore = teamOneScore + score;
+        }
     }
-
 }
