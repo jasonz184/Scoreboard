@@ -34,7 +34,7 @@ public class Scoreboard
             {
                 teamOneScore = teamOneScore + score;
             }
-            if (activeTeam == teamTwo)
+            else
             {
                 teamTwoScore = teamTwoScore + score;
             }
