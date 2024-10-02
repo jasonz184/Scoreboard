@@ -19,7 +19,7 @@ public class Scoreboard
     {
         if (score == 0)
         {
-            if (activeTeam == teamOne) 
+            if (activeTeam.equals(teamOne))
             {
                 activeTeam = teamTwo;
             }
@@ -30,7 +30,7 @@ public class Scoreboard
         } 
         else 
         {
-            if (activeTeam == teamOne)
+            if (activeTeam.equals(teamOne))
             {
                 teamOneScore = teamOneScore + score;
             }
