@@ -32,11 +32,11 @@ public class Scoreboard
         {
             if (activeTeam.equals(teamOne))
             {
-                teamOneScore = teamOneScore + score;
+                teamOneScore += score;
             }
             else
             {
-                teamTwoScore = teamTwoScore + score;
+                teamTwoScore += score;
             }
         }
     }
